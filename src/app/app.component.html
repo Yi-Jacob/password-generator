@@ -5,7 +5,33 @@
 
       <div class="field">
         <label>Length</label>
-        <input class="input" (input)="onChangeLength($event.target.value)" />
+        <input type="text"  class="input" (input)="onChangeLength($event.target.value)" />
+      </div>
+      <!-- <div class="field">
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="foobar" (input)="onChangeLength($event.target.value)">
+            8
+          </label>
+          <label class="radio">
+            <input type="radio" name="foobar" (input)="onChangeLength($event.target.value)">
+            10
+          </label>
+          <label class="radio">
+            <input type="radio" name="foobar" (input)="onChangeLength($event.target.value)">
+            12
+          </label>
+        </div>
+      </div> -->
+      <div class="control">
+        <label class="radio">
+          <input (input)="onChangeLength($event.target.value)" type="radio" name="answer">
+          Yes
+        </label>
+        <label class="radio">
+          <input type="radio" name="answer">
+          No
+        </label>
       </div>
 
       <div class="field">

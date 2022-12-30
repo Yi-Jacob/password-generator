@@ -13,6 +13,7 @@ export class AppComponent {
   password = '';
 
   onChangeLength(value: string) {
+    console.log(value)
     const parsedValue = parseInt(value);
 
     if (!isNaN(parsedValue)) {
